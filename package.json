@@ -1,7 +1,7 @@
 {
   "name"          : "backbone-ext",
   "description"   : "Assorted backbone plugins and monkey patches",
-  "author"        : "Jesse Tane <jesse@twosixheave.com>",
+  "author"        : "Jesse Tane <jesse.tane@gmail.com>",
   "main"          : "backbone-ext.js",
   "version"       : "0.0.1"
 }
