@@ -71,9 +71,8 @@ Backbone.LinkRouter = class extends Backbone.Router
       @linkEvent = evt
       target = $ evt.currentTarget
       url = target.attr "href"
-      if !target.attr "data-method"
-        fragment = Backbone.history.getFragment url;
-        matched = _.any Backbone.history.handlers, (handler) ->
-          if handler.route.test fragment then return true
-        if matched
-          @navigate url, { trigger: true }
+      fragment = Backbone.history.getFragment url;
+      matched = _.any Backbone.history.handlers, (handler) ->
+        if handler.route.test fragment then return true
+      if matched
+        @navigate url, { trigger: true }
